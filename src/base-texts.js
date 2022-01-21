@@ -9,6 +9,21 @@ const texto = `
     "Joooooooooãoooooooooooooooooooooooooooo   , o café tá prontinho aqui. Veeemm"!
 `;
 
+const arquivos = [
+    'Atenção.png',
+    'FOTO.png',
+    'Meu gatinho.jpg',
+    'Meu gatinho.JPG',
+    'Meu gatinho.JPEG',
+    'Meu gatinho.JPEeeeeeeeeeeeeeG',
+    'Marinho.png',
+    'lista de compras.txt'
+];
+
+const html = '<p>Olá mundo</p> <p>Olá mundo</p>';
+
 module.exports = {
-    texto    
+    texto,
+    arquivos,
+    html
 };
