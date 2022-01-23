@@ -20,7 +20,7 @@ const arquivos = [
     'lista de compras.txt'
 ];
 
-const html = '<p>Olá mundo</p> <p>Olá mundo</p>';
+const html = '<p class="teste teste">Olá mundo</p> <p>Olá mundo</p> <div>Olá mundo</div>';
 
 const alfabeto =
   'ABCDEFGHIJKLMNOPQRSTUVWXYZ atenção abcdefghijklmnopqrstuvwxyz ®¡ 0123456789 ¡';
@@ -48,6 +48,15 @@ const alfabeto =
      255.255.255.255
   `;
 
+const lookahead = `
+  ONLINE  192.168.0.1 ABCDEF inactive
+  OFFLINE  192.168.0.2 ABCDEF active
+  ONLINE  192.168.0.3 ABCDEF active
+  ONLINE  192.168.0.4 ABCDEF active
+  OFFLINE  192.168.0.5 ABCDEF active
+  OFFLINE  192.168.0.6 ABCDEF inactive
+`;
+
   module.exports = {
     texto,
     arquivos,
@@ -55,5 +64,6 @@ const alfabeto =
     alfabeto,
     cpfs,
     cpfs2,
-    ips
+    ips,
+    lookahead
 };
